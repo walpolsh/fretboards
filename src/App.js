@@ -10,21 +10,19 @@ class App extends Component {
     this.state = {
       note: Chromatic
     }
-    this.changeNote = this.changeNote.bind(this)
+
   }
-  changeNote(event) {
-    let keys = Chromatic;
-    const e = event.target.value
-    this.setState({
-      note: permute(keys, e),
-    })
-  }
+
   render() {
     let note = this.state.note
     return (
       <div className="App">
-          <String changeNote={this.changeNote} Chromatic={note}/>
-          <String changeNote={this.changeNote} Chromatic={note}/>
+          <String startNote={4} Chromatic={note}/>
+          <String startNote={11}Chromatic={note}/>
+          <String startNote={7}Chromatic={note}/>
+          <String startNote={2}Chromatic={note}/>
+          <String startNote={9}Chromatic={note}/>
+          <String startNote={4}Chromatic={note}/>
       </div>
     );
   }

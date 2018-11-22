@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Header = (props) => {
-  const { changeKey } = props
+  const { changeKey, changeScale } = props
 
   return (
     <div>
@@ -18,6 +18,16 @@ const Header = (props) => {
       <option value='9'>A</option>
       <option value='10'>Bb</option>
       <option value='11'>B</option>
+    </select>
+    <select id='scale' onChange={changeScale}> 
+      <option value='0'>Major</option>
+      <option value='1'>Melodic Minor</option>
+      <option value='2'>Harmonic Minor</option>
+      <option value='3'>Harmonic Major</option>
+      <option value='4'>Hungarian Major</option>
+      <option value='5'>Hungarian Minor</option>
+      <option value='7'>Neapolitan Major</option>
+      <option value='6'>Neapolitan Minor</option>
     </select>
   </div>
   )

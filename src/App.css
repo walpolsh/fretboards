@@ -8,9 +8,7 @@
 } */
 
 .frets:nth-child(1) {
-  border: none;
   border-right: 3px solid black;
-  border-bottom: 1px solid black;
 }
 
 .fretboardContainer {

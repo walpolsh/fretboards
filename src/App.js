@@ -109,8 +109,8 @@ class App extends Component {
                     onOff={onOff}
                   />
                   <NoteString
-                    stringName='E' 
-                    startNote={4}
+                    stringName='D' 
+                    startNote={2}
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}

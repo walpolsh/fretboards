@@ -60,54 +60,65 @@ class App extends Component {
             onOff={this.state.onOff}
           />
         </div>          
+        <div style={{paddingTop: '50px'}}>
+
+        </div>
         {
             scale.map((mode, i) => 
-              <div style={{paddingTop: '150px'}}>
+              <div>
                 <h1>{names[i]}</h1>
                 <div className='fretboardContainer'>
                   <NoteString 
+                    stringName='E'
                     startNote={4}
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}
                     onOff={onOff}
                   />
-                  <NoteString 
+                  <NoteString
+                    stringName='B'
                     startNote={11}
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}
                     onOff={onOff}
                   />
-                  <NoteString 
+                  <NoteString
+                    stringName='G' 
                     startNote={7}
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}
                     onOff={onOff}
                   />
-                  <NoteString 
+                  <NoteString
+                    stringName='D' 
                     startNote={2}
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}
                     onOff={onOff}
                   />
-                  <NoteString 
+                  <NoteString
+                    stringName='A' 
                     startNote={9}
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}
                     onOff={onOff}
                   />
-                  <NoteString 
+                  <NoteString
+                    stringName='E' 
                     startNote={4}
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}
                     onOff={onOff}
                   />
-
+                  </div>
+                  <div className='numberContainer'>
+                    {[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24].map(x => <div>{x}</div>)}
                 </div>
               </div>
             )

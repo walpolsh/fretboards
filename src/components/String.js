@@ -2,7 +2,7 @@ import React from 'react';
 import {permute} from '../constants/helpers'
 
 const String = (props) => {
-  let {startNote, mode, Chromatic, root, onOff} = props
+  let {startNote, mode, Chromatic, root, onOff, stringName} = props
   let notes = mode[1].map(x => root[x])
   let string = permute(Chromatic, startNote)
   string = string.concat(string).concat(string[0])
@@ -10,6 +10,7 @@ const String = (props) => {
   
   return (
     <div className="stringContainer">
+      {/* <div className='frets'>{stringName}</div> */}
       { 
         onOff === '0' ?
         string.map((note, i) =>

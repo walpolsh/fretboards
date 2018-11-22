@@ -6,7 +6,6 @@ const String = (props) => {
 
   let perm = permute(Chromatic, startNote)
   perm = perm.concat(perm).concat(perm[0])
-
   return (
     <div className="stringContainer">
       { 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import String from './components/String'
+import String2 from './components/String2'
 import Header from './components/Header'
 import { Chromatic, Major, MelodicMinor, HarmonicMinor, HarmonicMajor, HungarianMajor, HungarianMinor, NeapolitanMinor, NeapolitanMajor } from './constants/scales';
 import {permute} from './constants/helpers'
@@ -34,16 +35,13 @@ class App extends Component {
   }
   
   render() {
-
-    // let scale = this.state.scale[0][1].map(x => this.state.root[x])
-    let scale = this.state.scale
     let notes = this.state.scale.map(mode => 
       mode[1].map(x =>
         this.state.root[x]
       )
     )
     let names = this.state.scale.map(mode => {
-      mode[2].map(x => x)}
+      return mode[2]}
     )
     return (
       <div className="App">
@@ -54,9 +52,9 @@ class App extends Component {
           />
         </div>
           {
-            notes.map(mode => 
+            notes.map((mode, i) => 
               <div>
-                  <h1>{names[mode]}</h1>
+                  <h1>{names[i]}</h1>
                   <String startNote={4}
                   Chromatic={Chromatic}
                   root={this.state.root}

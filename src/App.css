@@ -1,6 +1,6 @@
 .stringContainer {
   display: grid;
-  grid-template-columns: repeat(27, 1fr);
+  grid-template-columns: repeat(25, 1fr);
 }
 
 .App {

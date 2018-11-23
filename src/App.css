@@ -1,18 +1,44 @@
 .frets {
   border: 1px solid black;
+  min-width: 10px;
 }
-/* 
-.frets:nth-child(1) {
-  border: none;
-  border-bottom: 1px solid black;
-} */
 
+.wrapper {
+  display: grid;
+  justify-items: center;
+}
 .frets:nth-child(1) {
+  border-right: 3px solid black;
+  border-left: 2px solid black;
+}
+.frets:last-child {
   border-right: 3px solid black;
 }
 
+.guitarContainer {
+  justify-content: center;
+  width: 90vw;
+}
+.fretboardSides{
+  padding: 0.5px;
+  background:black;
+}
 .fretboardContainer {
+  background: white;
   border: 1px solid black;
+}
+
+.hide {
+  background: white;
+}
+.first {
+  background: #ffc107;
+}
+.second {
+  background: #81b5d2
+}
+.third {
+  background: #79ca7c
 }
 
 .stringContainer {
@@ -21,17 +47,21 @@
   grid-template-columns: repeat(25, 1fr);
 }
 
+
 .numberContainer {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(25, 1fr);
 }
 
+
+
 .App {
   background: #CFD8DC;
   align-items: center;
   font-size: 12px;
   color: black;
+
 }
 
 button {

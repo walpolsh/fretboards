@@ -1,10 +1,13 @@
 import React from 'react'
-
+import banner from './header.png'
 const Header = (props) => {
   const { changeKey, changeScale, handleSwitch, onOff } = props
   return (
     <div className='topnav'>
-      <div className='menuBox'>
+      <div className='headerBox'>
+        <img alt='banner' src={banner} style={{width: '300px', height: '50px'}}></img>
+      </div>
+      {/* <div className='menuBox'>
         <div>
           <input type='checkbox' name='1'/>
           <label for='1'>1</label>
@@ -21,14 +24,14 @@ const Header = (props) => {
           <input type='checkbox' name='7'/>
           <label for='7'>7</label>
         </div>
-      </div>
+      </div> */}
       <div className='menuBox'>
-        {
+        {/* {
           onOff === '1' ?
           <button id='notes/nums' onClick={handleSwitch} value='0'>Nums</button>
           :
           <button id='notes/nums' onClick={handleSwitch} value='1'>Notes</button>
-        }
+        } */}
         <select onChange={changeKey}>
           <option id='keySig' value='0'>C</option>
           <option value='1'>Db</option>
@@ -52,6 +55,10 @@ const Header = (props) => {
           <option value='5'>Hungarian Minor</option>
           <option value='7'>Neapolitan Major</option>
           <option value='6'>Neapolitan Minor</option>
+          <option value='9'>Minor Pentatonic</option>
+          <option value='10'>Kumoi Pentatonic</option>
+          <option value='11'>Hirojoshi Pentatonic</option>
+          <option value='8'>Symmetrical</option>
         </select>
 
       </div>

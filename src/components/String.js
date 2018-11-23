@@ -8,27 +8,42 @@ const String = (props) => {
   string = string.concat(string).concat(string[0])
   let nums = mode[0].map(x => x)
   
+
   return (
     <div className="stringContainer">
-      {/* <div className='frets'>{stringName}</div> */}
       { 
         onOff === '0' ?
         string.map((note, i) =>
           <div className='frets'>
             {notes.indexOf(note) !== -1 ?
-              <div>
-                {
-                  notes[0] === note ? <div style={{background: '#79ca7c'}}>{note}</div> :
-                  notes[1] === note ? <div style={{background: '#81b5d2'}}>{note}</div> :
-                  notes[2] === note ? <div style={{background: '#79ca7c'}}>{note}</div> :
-                  notes[3] === note ? <div style={{background: '#81b5d2'}}>{note}</div> :
-                  notes[4] === note ? <div style={{background: '#79ca7c'}}>{note}</div> :
-                  notes[5] === note ? <div style={{background: '#81b5d2'}}>{note}</div> :
-                  notes[6] === note ? <div style={{background: '#79ca7c'}}>{note}</div> : 0
-                }
-              </div>  
+                  notes[0] === note ? 
+                    <div className='first'>{note}</div>
+                    :
+                  notes[1] === note ? 
+                    <div className='second'>{note}</div>
+                    :
+                  notes[2] === note ? 
+                    <div className='third'>{note}</div>
+                    :
+                  notes[3] === note ? 
+                    <div className='second'>{note}</div>
+                    :
+                  notes[4] === note ? 
+                    <div className='third'>{note}</div>
+                    :
+                  notes[5] === note ? 
+                    <div className='second'>{note}</div>
+                    :
+                  notes[6] === note ? 
+                    <div className='third'>{note}</div>
+                    : 
+                  notes[7] === note ? 
+                  <div className='second'>{note}</div>
+                  :
+                  0
+
               :
-              <div>
+              <div style={{background: ''}}>
                 
               </div>}
 
@@ -38,7 +53,7 @@ const String = (props) => {
         string.map((note, i) => 
         notes.indexOf(note) !== -1 ?
           <div>
-            {nums[notes]}
+            {notes}
           </div>  
           :
           <div>

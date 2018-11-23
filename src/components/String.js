@@ -12,8 +12,8 @@ const String = (props) => {
   return (
     <div className="stringContainer">
       { 
-        onOff === '0' ?
         string.map((note, i) =>
+          
           <div className='frets'>
             {notes.indexOf(note) !== -1 ?
                   notes[0] === note ? 
@@ -47,17 +47,6 @@ const String = (props) => {
                 
               </div>}
 
-          </div>
-        )
-        :
-        string.map((note, i) => 
-        notes.indexOf(note) !== -1 ?
-          <div>
-            {notes}
-          </div>  
-          :
-          <div>
-            -
           </div>
         )
       }

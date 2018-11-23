@@ -17,6 +17,7 @@
 
 .guitarContainer {
   justify-content: center;
+  text-align: center;
   width: 90vw;
 }
 .fretboardSides{
@@ -78,7 +79,7 @@ select {
   background-color: #FF9800;
 }
 
-select:hover {
+button:hover {
   border: 1px solid blue;
   border-radius: 4px;
   background-color:#ffb74d;
@@ -107,6 +108,13 @@ h2 {
   font-size: 16px;
 }
 
+h3 {
+  margin-bottom: 0;
+}
+h4 {
+  margin: 0;
+}
+
 .topnav {
   position: fixed;
   top: 0;
@@ -119,6 +127,25 @@ h2 {
   display: flex;
   width:100%;
   background-color: #78909C;
+  justify-content: center;
+}
+
+.keyBox {
+  padding: 0px 10vw 0px 10vw;
+  background-color: #607D8B;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+}
+.scaleBox {
+  padding: 0px 10vw 0px 10vw;
+  background-color: #607D8B;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 

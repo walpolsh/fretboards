@@ -60,8 +60,12 @@ class App extends Component {
   render() {
     let scale = this.state.scale
     let onOff = this.state.onOff
+    let root = this.state.root
     let names = scale.map(mode => {
       return mode[2]}
+    )
+    let formulas = scale.map(mode => {
+      return mode[0]}
     )
  
     return (
@@ -74,20 +78,19 @@ class App extends Component {
             onOff={this.state.onOff}
           />
         </div>          
-        <div style={{paddingTop: '100px'}}>
+        <div >
 
         </div>
-        <div className='wrapper'>
+        <div style={{paddingTop: '20vh'}} className='wrapper'>
         {
           scale.map((mode, i) => 
             <div className='guitarContainer'>
-              <h1>{names[i]}</h1>
-              <div className='numberContainer'>
-                  {['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24'].map((x, i) => 
-                    <div key={i++}>{x}</div>)}
-                  {/* {['*', '','','*','','*','','*','','*','','','**','','','*','','*','','*','','*','','','*'].map((x, i) =>   
-                  <div key={i++}>{x}</div>)} */}
-                </div>
+              <div>
+                <h3>{names[i]} {mode[3][0] ? `(${mode[3][0].map(x => x[i])})` : ''}</h3>
+                <h4>{formulas[i].join(' - ')}</h4>
+                <h4 style={{paddingBottom: '10px'}}>{mode[1].map(x => root[x]).join(' - ')}</h4>
+              </div>
+             
               <div className='fretboardSides'/>
               <div className='fretboardContainer'>
                 <String 

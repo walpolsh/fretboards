@@ -2,19 +2,19 @@ import React from 'react';
 import {permute} from '../constants/helpers'
 
 const String = (props) => {
-  let {startNote, mode, Chromatic, root, onOff, stringName} = props
+  let {startNote, mode, Chromatic, root} = props
   let notes = mode[1].map(x => root[x])
   let string = permute(Chromatic, startNote)
-  string = string.concat(string).concat(string[0])
-  let nums = mode[0].map(x => x)
-  
+  string = string.concat(string).concat(string[0])  
 
   return (
     <div className="stringContainer">
       { 
         string.map((note, i) =>
-          
-          <div className='frets'>
+          {
+            let j = i
+          return (
+          <div className='frets' key={j++}>
             {notes.indexOf(note) !== -1 ?
                   notes[0] === note ? 
                     <div className='first'>{note}</div>
@@ -45,9 +45,13 @@ const String = (props) => {
               :
               <div style={{background: ''}}>
                 
-              </div>}
+              </div>
+              
+            }
 
           </div>
+          )
+          }
         )
       }
     </div>

@@ -5,15 +5,6 @@ import Header from './components/Header'
 import { Chromatic, Major, MelodicMinor, HarmonicMinor, HarmonicMajor, HungarianMajor, HungarianMinor, NeapolitanMinor, NeapolitanMajor, Symmetrical, Pentatonic, Kumoi, Hirojoshi } from './constants/scales';
 import {permute} from './constants/helpers'
 
-const classQuery = 'first' ? '#ff9800':
-'second' ? '#81b5d2':
-'third' ? '#79ca7c':
-'fourth' ? '#81b5d2':
-'fifth' ? '#79ca7c':
-'sixth' ? '#81b5d2':
-'seventh' ? '#79ca7c':
-'eighth' ? '#81b5d2' : 0
-
 class App extends Component {
   constructor() {
     super()
@@ -84,72 +75,78 @@ class App extends Component {
         <div style={{paddingTop: '20vh'}} className='wrapper'>
         {
           scale.map((mode, i) => 
-            <div className='guitarContainer'>
-              <div>
-                <h3>{names[i]} {mode[3][0] ? `(${mode[3][0].map(x => x[i])})` : ''}</h3>
-                <h4>{formulas[i].join(' - ')}</h4>
-                <h4 style={{paddingBottom: '10px'}}>{mode[1].map(x => root[x]).join(' - ')}</h4>
-              </div>
-             
-              <div className='fretboardSides'/>
-              <div className='fretboardContainer'>
-                <String 
-                  stringName='E'
-                  startNote={4}
-                  Chromatic={Chromatic}
-                  root={this.state.root}
-                  mode={mode}
-                  onOff={onOff}
-                />
-                <String
-                  stringName='B'
-                  startNote={11}
-                  Chromatic={Chromatic}
-                  root={this.state.root}
-                  mode={mode}
-                  onOff={onOff}
-                />
-                <String
-                  stringName='G' 
-                  startNote={7}
-                  Chromatic={Chromatic}
-                  root={this.state.root}
-                  mode={mode}
-                  onOff={onOff}
-                />
-                <String
-                  stringName='D' 
-                  startNote={2}
-                  Chromatic={Chromatic}
-                  root={this.state.root}
-                  mode={mode}
-                  onOff={onOff}
-                />
-                <String
-                  stringName='A' 
-                  startNote={9}
-                  Chromatic={Chromatic}
-                  root={this.state.root}
-                  mode={mode}
-                  onOff={onOff}
-                />
-                <String
-                  stringName='E' 
-                  startNote={4}
-                  Chromatic={Chromatic}
-                  root={this.state.root}
-                  mode={mode}
-                  onOff={onOff}
-                />
+            {
+              let j = i;
+              return (
+              <div key={j}className='guitarContainer'>
+                <div>
+                  <h3>{names[i]} {mode[3][0] ? `(${mode[3][0].map(x => x[i])})` : ''}</h3>
+                  <h4>{mode[1].map(x => root[x]).join(' - ')}</h4>
+                  <h4 style={{paddingBottom: '10px'}}>{formulas[i].join(' - ')}</h4>
                 </div>
-                <div className='fretboardSides'/>                                <div className='numberContainer'>
-                  {['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24'].map((x, i) => 
-                    <div key={i++}>{x}</div>)}
-                  {/* {['*', '','','*','','*','','*','','*','','','**','','','*','','*','','*','','*','','','*'].map((x, i) =>   
-                  <div key={i++}>{x}</div>)} */}
+              
+                <div className='fretboardSides'/>
+                <div className='fretboardContainer'>
+                  <String 
+                    stringName='E'
+                    startNote={4}
+                    Chromatic={Chromatic}
+                    root={this.state.root}
+                    mode={mode}
+                    onOff={onOff}
+                  />
+                  <String
+                    stringName='B'
+                    startNote={11}
+                    Chromatic={Chromatic}
+                    root={this.state.root}
+                    mode={mode}
+                    onOff={onOff}
+                  />
+                  <String
+                    stringName='G' 
+                    startNote={7}
+                    Chromatic={Chromatic}
+                    root={this.state.root}
+                    mode={mode}
+                    onOff={onOff}
+                  />
+                  <String
+                    stringName='D' 
+                    startNote={2}
+                    Chromatic={Chromatic}
+                    root={this.state.root}
+                    mode={mode}
+                    onOff={onOff}
+                  />
+                  <String
+                    stringName='A' 
+                    startNote={9}
+                    Chromatic={Chromatic}
+                    root={this.state.root}
+                    mode={mode}
+                    onOff={onOff}
+                  />
+                  <String
+                    stringName='E' 
+                    startNote={4}
+                    Chromatic={Chromatic}
+                    root={this.state.root}
+                    mode={mode}
+                    onOff={onOff}
+                  />
+                  </div>
+                  <div className='fretboardSides'/>                                <div className='numberContainer'>
+                    {['0','1','','3','','5','','7','','9','','','12','','','15','','17','','19','','21','','','24'].map((x, i) => 
+                      <div key={i++}>{x}</div>)}
+                    {/* {['*', '','','*','','*','','*','','*','','','**','','','*','','*','','*','','*','','','*'].map((x, i) =>   
+                    <div key={i++}>{x}</div>)} */}
+                  </div>
                 </div>
-              </div>
+              )
+            }
             )
+
           }
           
           

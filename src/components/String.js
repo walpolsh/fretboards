@@ -46,6 +46,7 @@ const String = (props) => {
 
               :
               <div style={{background: ''}}>
+                
               </div>
             }
           </div>

@@ -35,8 +35,18 @@
   color: grey;
 }
 
+.hide:hover {
+  cursor: pointer;
+}
+
+.first:hover, .second:hover,.third:hover,.fourth:hover,.fifth:hover,.sixth:hover,.seventh:hover,.eighth:hover {
+  cursor: pointer;
+}
+
 .first {
   background: #fb9900;
+  height: 13px;
+  border: 1px solid red; 
 }
 .second, .fourth, .sixth, .eighth {
   background: #81b5d2

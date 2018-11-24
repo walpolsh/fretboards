@@ -4,9 +4,9 @@ const Header = (props) => {
   const { changeKey, changeScale } = props
   return (
     <div className='topnav'>
-      {/* <div className='headerBox'>
+      <div className='headerBox'>
         <img alt='banner' src={banner} style={{width: '300px', height: '50px'}}></img>
-      </div> */}
+      </div>
       {/* <div className='menuBox'>
         <div>
           <input type='checkbox' name='1'/>
@@ -54,11 +54,6 @@ const Header = (props) => {
         <button value='11' onClick={changeScale}>Hirojoshi</button>
         <button value='8' onClick={changeScale}>Symmetrical</button>
       </div>
-      <div className='scaleBox'>
-        <button value='0' onClick={changeScale}>Major</button>
-      </div>
-      
-
     </div>
   )
 }

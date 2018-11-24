@@ -139,10 +139,10 @@ class App extends Component {
             onOff={this.state.onOff}
           />
         </div>          
-        <div style={{paddingTop: '10vh'}} className='wrapper'>
-        <div className='headerBox'>
+        <div style={{paddingTop: '120px'}} className='wrapper'>
+        {/* <div className='headerBox'>
           <img alt='banner' src={banner} style={{width: '300px', height: '50px'}}></img>
-        </div>
+        </div> */}
         {
           scale.map((mode, i) => 
             {
@@ -154,7 +154,10 @@ class App extends Component {
                   <h4>{mode[1].map(x => root[x]).join(' - ')}</h4>
                   <h4 style={{paddingBottom: '10px'}}>{formulas[i].join(' - ')}</h4>
                 </div>
-              
+                <div className='numberContainer'>
+                    {['0','1','','3','','5','','7','','9','','','12','','','15','','17','','19','','21','','','24'].map((x, i) => 
+                      <div key={i++}>{x}</div>)}
+                </div>
                 <div className='fretboardSides'/>
                 <div className='fretboardContainer'>
                   <String 
@@ -310,36 +313,11 @@ class App extends Component {
 
 
                   />
-                  <String
-                    stringName='G' 
-                    startNote={7}
-                    Chromatic={Chromatic}
-                    root={this.state.root}
-                    mode={mode}
-                    onOff={onOff}
-                    handleHighlight={this.handleHighlight}
-                    handleHighlight2={this.handleHighlight2}
-                    handleHighlight3={this.handleHighlight3}
-                    handleHighlight4={this.handleHighlight4}
-                    handleHighlight5={this.handleHighlight5}
-                    handleHighlight6={this.handleHighlight6}
-                    handleHighlight7={this.handleHighlight7}
-                    handleHighlight8={this.handleHighlight8}
-                    first={this.state.first ? 'first' : 'hide'}  
-                    second={this.state.second ? 'second' : 'hide'}  
-                    third={this.state.third ? 'third' : 'hide'}  
-                    fourth={this.state.fourth ? 'fourth' : 'hide'}  
-                    fifth={this.state.fifth ? 'fifth' : 'hide'}  
-                    sixth={this.state.sixth ? 'sixth' : 'hide'}  
-                    seventh={this.state.seventh ? 'seventh' : 'hide'}  
-                    eighth={this.state.eighth ? 'eighth' : 'hide'}  
-                  />
                   </div>
-                  <div className='fretboardSides'/>                                <div className='numberContainer'>
-                    {['0','1','','3','','5','','7','','9','','','12','','','15','','17','','19','','21','','','24'].map((x, i) => 
+                  <div className='fretboardSides'/>
+                  <div className='numberContainer'>
+                    {['••','•','','•','','•','','•','','•','','','••','','','•','','•','','•','','•','','','••'].map((x, i) => 
                       <div key={i++}>{x}</div>)}
-                    {/* {['*', '','','*','','*','','*','','*','','','**','','','*','','*','','*','','*','','','*'].map((x, i) =>   
-                    <div key={i++}>{x}</div>)} */}
                   </div>
                 </div>
               )
@@ -350,6 +328,13 @@ class App extends Component {
           
           
         </div>
+        <footer>
+            <div>
+              <hr/> 
+              <a href="https://github.com/walpolsh">© Paul J. Walsh</a>
+            </div>
+          </footer>
+
       </div>
     );
   }

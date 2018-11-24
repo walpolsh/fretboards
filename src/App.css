@@ -1,3 +1,4 @@
+
 .frets {
   border: 1px solid black;
   min-width: 10px;
@@ -31,15 +32,17 @@
 
 .hide {
   background: white;
+  color: grey;
 }
+
 .first {
-  background: #ffc107;
+  background: #fb9900;
 }
-.second {
+.second, .fourth, .sixth, .eighth {
   background: #81b5d2
 }
-.third {
-  background: #79ca7c
+.third, .fifth, .seventh {
+  background: #00b900;
 }
 
 .stringContainer {

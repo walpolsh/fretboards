@@ -1,14 +1,14 @@
 {
-  "main.css": "/fretboards/static/css/main.8f98cb9c.chunk.css",
-  "main.js": "/fretboards/static/js/main.62ee0599.chunk.js",
-  "main.js.map": "/fretboards/static/js/main.62ee0599.chunk.js.map",
+  "main.css": "/fretboards/static/css/main.def7dca7.chunk.css",
+  "main.js": "/fretboards/static/js/main.4ea9178d.chunk.js",
+  "main.js.map": "/fretboards/static/js/main.4ea9178d.chunk.js.map",
   "static/js/1.d369b635.chunk.js": "/fretboards/static/js/1.d369b635.chunk.js",
   "static/js/1.d369b635.chunk.js.map": "/fretboards/static/js/1.d369b635.chunk.js.map",
   "runtime~main.js": "/fretboards/static/js/runtime~main.a64cd585.js",
   "runtime~main.js.map": "/fretboards/static/js/runtime~main.a64cd585.js.map",
   "static/media/header.png": "/fretboards/static/media/header.e78304a0.png",
-  "static/css/main.8f98cb9c.chunk.css.map": "/fretboards/static/css/main.8f98cb9c.chunk.css.map",
+  "static/css/main.def7dca7.chunk.css.map": "/fretboards/static/css/main.def7dca7.chunk.css.map",
   "index.html": "/fretboards/index.html",
-  "precache-manifest.65d7f84fbbb4e46cd1373926faf3b590.js": "/fretboards/precache-manifest.65d7f84fbbb4e46cd1373926faf3b590.js",
+  "precache-manifest.3d35649aaf1d1234bb70775a283197ba.js": "/fretboards/precache-manifest.3d35649aaf1d1234bb70775a283197ba.js",
   "service-worker.js": "/fretboards/service-worker.js"
 }

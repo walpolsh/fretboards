@@ -54,15 +54,35 @@
 }
 
 .first {
-  background: #fb9900;
+  background: #fb3600cc;
 
   /* border: 1px solid red;  */
 }
-.second, .fourth, .sixth, .eighth {
-  background: #81b5d2
-}
-.third, .fifth, .seventh {
-  background: #00b900;
+.second, .fourth, .sixth, .eighth{
+  background:#8eb7be
+} 
+/* 
+.fourth {
+  background:#61CADC
+} 
+
+.sixth {
+  background:#54DDD2
+} 
+
+.eighth {
+  background: #76ECB6
+} */
+.third {
+  background: #47a3f8;
+} 
+
+.fifth {
+  background: #ffdf2b;
+} 
+
+.seventh {
+  background: #36d936;
 }
 
 .infoHead {

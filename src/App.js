@@ -283,8 +283,8 @@ class App extends Component {
 
                   />
                   <String
-                    stringName='D' 
-                    startNote={2}
+                    stringName='E' 
+                    startNote={4}
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}

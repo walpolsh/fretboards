@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import banner from './header.png'
 import String from './components/String'
+import Info from './components/Info'
 import Header from './components/Header'
 import { Chromatic, Major, MelodicMinor, HarmonicMinor, HarmonicMajor, HungarianMajor, HungarianMinor, NeapolitanMinor, NeapolitanMajor, Symmetrical, Pentatonic, Kumoi, Hirojoshi } from './constants/scales';
 import {permute} from './constants/helpers'
@@ -149,16 +150,19 @@ class App extends Component {
               let j = i;
               return (
               <div key={j}className='guitarContainer'>
-                <div>
+                <Info 
+                  mode={mode}
+                  root={root}
+                />
+                {/* <div>
                   <h3>{names[i]} {mode[3][0] ? `(${mode[3][0].map(x => x[i])})` : ''}</h3>
                   <h4>{mode[1].map(x => root[x]).join(' - ')}</h4>
                   <h4 style={{paddingBottom: '10px'}}>{formulas[i].join(' - ')}</h4>
-                </div>
+                </div> */}
                 <div className='numberContainer'>
                     {['0','1','','3','','5','','7','','9','','','12','','','15','','17','','19','','21','','','24'].map((x, i) => 
                       <div key={i++}>{x}</div>)}
                 </div>
-                <div className='fretboardSides'/>
                 <div className='fretboardContainer'>
                   <String 
                     stringName='E'
@@ -314,8 +318,7 @@ class App extends Component {
 
                   />
                   </div>
-                  <div className='fretboardSides'/>
-                  <div className='numberContainer'>
+                    <div className='numberContainer'>
                     {['••','•','','•','','•','','•','','•','','','••','','','•','','•','','•','','•','','','••'].map((x, i) => 
                       <div key={i++}>{x}</div>)}
                   </div>

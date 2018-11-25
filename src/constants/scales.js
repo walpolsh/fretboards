@@ -36,12 +36,12 @@ const Mode5 = [[''], [0, 2, 5, 7, 9], ["Pentatonic Mode 5"],['']]
 
 export const Pentatonic = [MinorPenta, MajorPenta, Mode3, Mode4, Mode5]
 
-const WholeTone = [[], [0,2,4,6,8,10],['Whole Tone'],[]]
-const HalfWhole = [[], [0,1,3,4,6,7,9,10],['Half Whole Diminished'],[]]
-const WholeHalf = [[], [0,2,3,5,6,8,9,11],['Whole Half Diminished'],[]]
-const Augmented = [[], [0,3,4,7,8,11],['Augmented'],[]]
-const Augmented2 = [[], [0,1,4,5,8,9],['Augmented 2'],[]]
-const Tritone = [[], [0,1,4,6,7,10],['Tritone'],[]]
+const WholeTone = [[], [0,2,4,6,8,10],['Whole Tone'],['']]
+const HalfWhole = [[], [0,1,3,4,6,7,9,10],['Half Whole Diminished'],['']]
+const WholeHalf = [[], [0,2,3,5,6,8,9,11],['Whole Half Diminished'],['']]
+const Augmented = [[], [0,3,4,7,8,11],['Augmented'],['']]
+const Augmented2 = [[], [0,1,4,5,8,9],['Augmented 2'],['']]
+const Tritone = [[], [0,1,4,6,7,10],['Tritone'],['']]
 
 
 export const Symmetrical = [WholeTone, HalfWhole, WholeHalf, Augmented, Augmented2, Tritone]

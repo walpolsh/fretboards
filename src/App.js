@@ -123,12 +123,6 @@ class App extends Component {
     let scale = this.state.scale
     let onOff = this.state.onOff
     let root = this.state.root
-    let names = scale.map(mode => {
-      return mode[2]}
-    )
-    let formulas = scale.map(mode => {
-      return mode[0]}
-    )
  
     return (
       <div className="App">
@@ -159,10 +153,7 @@ class App extends Component {
                   <h4>{mode[1].map(x => root[x]).join(' - ')}</h4>
                   <h4 style={{paddingBottom: '10px'}}>{formulas[i].join(' - ')}</h4>
                 </div> */}
-                <div className='numberContainer'>
-                    {['0','1','','3','','5','','7','','9','','','12','','','15','','17','','19','','21','','','24'].map((x, i) => 
-                      <div key={i++}>{x}</div>)}
-                </div>
+
                 <div className='fretboardContainer'>
                   <String 
                     stringName='E'
@@ -317,6 +308,10 @@ class App extends Component {
 
 
                   />
+                  </div>
+                  <div className='numberContainer'>
+                    {['0','1','','3','','5','','7','','9','','','12','','','15','','17','','19','','21','','','24'].map((x, i) => 
+                      <div key={i++}>{x}</div>)}
                   </div>
                     <div className='numberContainer'>
                     {['••','•','','•','','•','','•','','•','','','••','','','•','','•','','•','','•','','','••'].map((x, i) => 

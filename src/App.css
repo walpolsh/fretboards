@@ -77,7 +77,7 @@
 .formulaContainer {
   display: grid;
   /* grid-template-columns: repeat(8, 1fr); */
-  font-size: 10px;
+  /* font-size: 10px; */
   /* border: 1px solid black; */
 }
 
@@ -88,7 +88,7 @@
 
 .chordContainer {
   display: grid;
-  font-size: 10px;
+  /* font-size: 10px; */
   /* border: 1px solid black; */
 }
 
@@ -108,14 +108,17 @@
 .stringContainer {
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(25, 1fr);
+  /* grid-template-columns: repeat(25, 1fr); */
+  grid-template-columns: 1fr 1.403fr 1.324fr 1.250fr 1.180fr 1.114fr 1.051fr 0.992fr 0.936fr 0.884fr 0.834fr 0.787fr 0.743fr 0.702fr 0.662fr 0.625fr 0.590fr 0.557fr 0.526fr 0.496fr 0.468fr 0.442fr 0.417fr 0.394fr 0.372fr
 }
 
 
 .numberContainer {
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(25, 1fr);
+  /* grid-template-columns: repeat(25, 1fr); */
+  grid-template-columns: 1fr 1.403fr 1.324fr 1.250fr 1.180fr 1.114fr 1.051fr 0.992fr 0.936fr 0.884fr 0.834fr 0.787fr 0.743fr 0.702fr 0.662fr 0.625fr 0.590fr 0.557fr 0.526fr 0.496fr 0.468fr 0.442fr 0.417fr 0.394fr 0.372fr
+
 }
 
 

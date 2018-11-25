@@ -12,39 +12,52 @@ const permuteAlt = (arr, i) => {
 
 //[0, 2, 4, 5, 7, 9, 11]
 
-const Hirojoshi1 = [[''],[0,2,3,7,8],['Hirojoshi Mode 1'],['']]
-const Hirojoshi2 = [[''],[0,1,5,6,10],['Hirojoshi Mode 2'],['']]
-const Hirojoshi3 = [[''],[0,4,5,9,11],['Hirojoshi Mode 3'],['']]
-const Hirojoshi4 = [[''],[0,1,5,7,8],['Hirojoshi Mode 4'],['']]
-const Hirojoshi5 = [[''],[0,4,6,7,11],['Hirojoshi Mode 5'],['']]
+const Hirojoshi1 = [['1', '2', 'b3', '5', 'b6'],[0,2,3,7,8],['Hirojoshi Mode 1'],['']]
+const Hirojoshi2 = [['1','b2','4','b5','b7'
+],[0,1,5,6,10],['Hirojoshi Mode 2'],['']]
+const Hirojoshi3 = [['1','3','4','6','7'
+],[0,4,5,9,11],['Hirojoshi Mode 3'],['']]
+const Hirojoshi4 = [['1','b2','4','5','b6'
+],[0,1,5,7,8],['Hirojoshi Mode 4'],['']]
+const Hirojoshi5 = [['1','2','#4','5','7'
+],[0,4,6,7,11],['Hirojoshi Mode 5'],['']]
 
 export const Hirojoshi = [Hirojoshi1, Hirojoshi2, Hirojoshi3,Hirojoshi4,Hirojoshi5]
 
-const KuMode1 = [[''],[0,2,3,7,9],['Kumoi Mode 1'],['']]
-const KuMode2 = [[''],[0,1,5,7,10],['Kumoi Mode 2'],['']]
-const KuMode3 = [[''],[0,1,6,9,11],['Kumoi Mode 3'],['']]
-const KuMode4 = [[''],[0,2,5,7,8],['Kumoi Mode 4'],['']]
-const KuMode5 = [[''],[0,3,5,6,10],['Kumoi Mode 5'],['']]
+
+
+const KuMode1 = [['1','2','b3','5','6'],[0,2,3,7,9],['Kumoi Mode 1'],['']]
+const KuMode2 = [['1','b2','4','5','b7'],[0,1,5,7,10],['Kumoi Mode 2'],['']]
+const KuMode3 = [['1','3','b5','6','7'
+],[0,1,6,9,11],['Kumoi Mode 3'],['']]
+const KuMode4 = [['1','2','4','5','b6'
+],[0,2,5,7,8],['Kumoi Mode 4'],['']]
+const KuMode5 = [['1','b3','b4','b5','b7'
+],[0,3,5,6,10],['Kumoi Mode 5'],['']]
 
 export const Kumoi = [KuMode1, KuMode2, KuMode3, KuMode4, KuMode5]
 
-const MinorPenta = [[''], [0, 3, 5, 7, 10], ["Minor Pentatonic"],['']]
-const MajorPenta = [[''], [0, 2, 4, 7, 9], ["Major Pentatonic"],['']]
-const Mode3 = [[''], [0, 2, 5, 7, 10], ["Pentatonic Mode 3"],['']]
-const Mode4 = [[''], [0, 3, 5, 8, 10], ["Pentatonic Mode 4"],['']]
-const Mode5 = [[''], [0, 2, 5, 7, 9], ["Pentatonic Mode 5"],['']]
+const MinorPenta = [['1','b3','4','5','b7'], [0, 3, 5, 7, 10], ["Minor Pentatonic"],['']]
+const MajorPenta = [['1','2','3','5','6'], [0, 2, 4, 7, 9], ["Major Pentatonic"],['']]
+const Mode3 = [['1','2','4','5','b7'], [0, 2, 5, 7, 10], ["Pentatonic Mode 3"],['']]
+const Mode4 = [['1','b3','4','#5','b7'], [0, 3, 5, 8, 10], ["Pentatonic Mode 4"],['']]
+const Mode5 = [['1','2','4','5','6'], [0, 2, 5, 7, 9], ["Pentatonic Mode 5"],['']]
 
 export const Pentatonic = [MinorPenta, MajorPenta, Mode3, Mode4, Mode5]
 
-const WholeTone = [[], [0,2,4,6,8,10],['Whole Tone'],['']]
-const HalfWhole = [[], [0,1,3,4,6,7,9,10],['Half Whole Diminished'],['']]
-const WholeHalf = [[], [0,2,3,5,6,8,9,11],['Whole Half Diminished'],['']]
-const Augmented = [[], [0,3,4,7,8,11],['Augmented'],['']]
-const Augmented2 = [[], [0,1,4,5,8,9],['Augmented 2'],['']]
-const Tritone = [[], [0,1,4,6,7,10],['Tritone'],['']]
 
 
-export const Symmetrical = [WholeTone, HalfWhole, WholeHalf, Augmented, Augmented2, Tritone]
+
+
+
+
+const WholeTone = [['1','2','3','#4','#5','#6'], [0,2,4,6,8,10],['Whole Tone'],['']]
+const HalfWhole = [['1','b2','b3','3','#4','5','6','b7'], [0,1,3,4,6,7,9,10],['Half Whole Diminished'],['']]
+const WholeHalf = [['1','2','b3','4','b5','b6','6','7'], [0,2,3,5,6,8,9,11],['Whole Half Diminished'],['']]
+const Augmented = [['1','#2','3','5','b6','7'], [0,3,4,7,8,11],['Augmented'],['']]
+const Augmented2 = [['1','b2','3','4','#5','6'], [0,1,4,5,8,9],['Augmented 2'],['']]
+
+export const Symmetrical = [WholeTone, HalfWhole, WholeHalf, Augmented, Augmented2]
 
 //Chromatic Scale
 export const Chromatic = ["C","Db","D","Eb","E","F","Gb","G","Ab","A","Bb","B"]

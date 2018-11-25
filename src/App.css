@@ -36,10 +36,11 @@
 }
 
 .blankFrets {
-  border: solid #CFD8DC;
+  /* border: solid #CFD8DC;
   min-width: 10px;
-  height: 10px;
+  height: 10px; */
 }
+
 .hide:hover {
   cursor: pointer;
 }
@@ -74,20 +75,19 @@
 }
 
 .formulaContainer {
-  background: #79909d;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  /* grid-template-columns: repeat(8, 1fr); */
   font-size: 10px;
   /* border: 1px solid black; */
 }
 
 .formulaContainer > .info {
+  background: #79909d;
   border: 1px solid black;
 }
 
 .chordContainer {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
   font-size: 10px;
   /* border: 1px solid black; */
 }

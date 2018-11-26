@@ -148,12 +148,12 @@ class App extends Component {
                   handleHighlight6={this.handleHighlight6}
                   handleHighlight7={this.handleHighlight7}
                   handleHighlight8={this.handleHighlight8}
-                  first={this.state.first ? 'first' : 'hide'}
+                  first={this.state.first ? 'first' : 'hide'}  
                   second={this.state.second ? 'second' : 'hide'}  
-                  third={this.state.third ? 'third' : 'hide'}
+                  third={this.state.third ? 'third' : 'hide'}  
                   fourth={this.state.fourth ? 'fourth' : 'hide'}  
-                  fifth={this.state.fifth ? 'fifth' : 'hide'}
-                  sixth={this.state.sixth ? 'sixth' : 'hide'}
+                  fifth={this.state.fifth ? 'fifth' : 'hide'}  
+                  sixth={this.state.sixth ? 'sixth' : 'hide'}  
                   seventh={this.state.seventh ? 'seventh' : 'hide'}  
                   eighth={this.state.eighth ? 'eighth' : 'hide'}  
                 />

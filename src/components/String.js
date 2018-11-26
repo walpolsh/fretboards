@@ -45,8 +45,7 @@ const String = (props) => {
                   0
 
               :
-              <div className='blankFrets blankNote'>
-                <p style={{background: 'grey'}}></p>
+              <div className='blankNote'>
               </div>
             }
           </div>

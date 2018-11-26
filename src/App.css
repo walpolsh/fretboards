@@ -26,8 +26,13 @@
   background:black;
 }
 .fretboardContainer {
-  background: white;
-  border: 2px solid black;
+  background:white;
+  /* background-image: url(./maple.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
 }
 
 .hide {
@@ -48,23 +53,40 @@
 }
 
 .first {
-  background: #fb3600cc;
+  background: #fb3600;
+
 }
 
 .third {
   background: #47a3f8;
+
 } 
 
 .fifth {
   background: #ffdf2b;
+
 } 
 
 .seventh {
   background: #36d936;
+
 }
 
-.second, .fourth, .sixth, .eighth{
-  background:#8eb7be
+.second{
+  background: #8eb7be;
+
+} 
+.fourth{
+  background: #8eb7be;
+
+} 
+.sixth{
+  background: #8eb7be;
+
+} 
+.eighth{
+  background:#8eb7be;
+
 } 
 
 .infoHead {
@@ -106,7 +128,7 @@
   background: #8eb7be;
 }
 .chordContainer .info:nth-child(2) {
-  background: #fb3600cc;
+  background: #fb3600;
 }
 .chordContainer .info:nth-child(4) {
   background: #47a3f8;
@@ -127,6 +149,11 @@
   grid-template-columns: 1fr 1.403fr 1.324fr 1.250fr 1.180fr 1.114fr 1.051fr 0.992fr 0.936fr 0.884fr 0.834fr 0.787fr 0.743fr 0.702fr 0.662fr 0.625fr 0.590fr 0.557fr 0.526fr 0.496fr 0.468fr 0.442fr 0.417fr 0.394fr 0.372fr
 }
 
+.blankNote .frets{
+  top:50%;
+  background: black;
+  height: 1px;
+}
 
 .numberContainer {
   text-align: center;

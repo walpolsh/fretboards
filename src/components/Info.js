@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Info = (props) => {
-  let {mode, root} = props;
+  let {mode, root, handleHighlight, handleHighlight2, handleHighlight3, handleHighlight4, 
+  handleHighlight5, handleHighlight6, handleHighlight7, handleHighlight8,first, second, third, fourth, fifth, sixth, seventh, eighth} = props;
   let name = mode[2]
   let nums = mode[0] ? mode[0].map((x, i) => <div className='info' key={i++}>{x}</div>) : ''
   let notes = mode[3][0][0] ? 

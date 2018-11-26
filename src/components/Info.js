@@ -15,7 +15,7 @@ const Info = (props) => {
 
   return (
     <div className='infoHead'>
-      <h1>{name}</h1>
+      <h1>{root[0]} {name}</h1>
       <div className='formulaContainer' style={{gridTemplateColumns: `${columns}`}}><div className='info'>Formula:</div> {nums}</div>
       <div className='chordContainer' style={{gridTemplateColumns: `${columns}`}}><div className='info'>Chords:</div> {notes}</div>
       <br/>

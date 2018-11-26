@@ -11,7 +11,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      root: Chromatic,
+      root: permute(Chromatic, 4),
       scale: Major,
       onOff: '0',
       first: true,
@@ -36,13 +36,6 @@ class App extends Component {
     this.handleHighlight7 = this.handleHighlight7.bind(this)
     this.handleHighlight8 = this.handleHighlight8.bind(this)
 
-  }
-
-  componentWillMount() {
-    this.setState({
-      list: ["first", "second", "third"],
-      listChecked: [{ first: false }, { second: false }, { third: false }]
-    });
   }
 
   changeKey(event) {

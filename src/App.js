@@ -35,7 +35,6 @@ class App extends Component {
     this.handleHighlight6 = this.handleHighlight6.bind(this)
     this.handleHighlight7 = this.handleHighlight7.bind(this)
     this.handleHighlight8 = this.handleHighlight8.bind(this)
-
   }
 
   changeKey(event) {

@@ -8,9 +8,7 @@ const permuteAlt = (arr, i) => {
   arr2.push( chunk2.concat(chunk1))
   return arr2
 }
-// 1  2  3  4  5  6  7
 
-//[0, 2, 4, 5, 7, 9, 11]
 
 const Hirojoshi1 = [['1', '2', 'b3', '5', 'b6'],[0,2,3,7,8],['Hirojoshi Mode 1'],['']]
 const Hirojoshi2 = [['1','b2','4','b5','b7'
@@ -46,6 +44,27 @@ const Mode5 = [['1','2','4','5','6'], [0, 2, 5, 7, 9], ["Pentatonic Mode 5"],[''
 export const Pentatonic = [MinorPenta, MajorPenta, Mode3, Mode4, Mode5]
 
 
+
+
+let bebopDomChords = []
+
+for (let i = 0; i < 8; i++) {
+  bebopDomChords.push(permuteAlt(["dom7", "min/maj6", "maj6/b4", "maj7", "dom7", "min7", "maj7", "min/maj7b5"], i))
+}
+
+// 1  2  3  4  5  6  7
+//[0, 2, 4, 5, 7, 9, 11]
+
+const BebopDom = [['1','2','3','4','5','6','b7','7'],[0,2,4,5,7,9,10,11],['Bebop Dominant'], [bebopDomChords[0]]]
+const Bebop2 = [['1','2','b3','4','5','b6','6','b7'],[0,2,3,5,7,8,9,10],['Bebop Dominant 2'], [bebopDomChords[1]]]
+const Bebop3 = [['1','b2','b3','4','b5','5','b6','b7'],[0,1,3,5,6,7,8,10],['Bebop Dominant 3'], [bebopDomChords[2]]]
+const Bebop4 = [['1','2','3','4','b5','5','6','7'],[0,2,4,5,6,7,9,11],['Bebop Dominant 4'], [bebopDomChords[3]]]
+const Bebop5 = [['1','2','b3','3','4','5','6','b7'],[0,2,3,4,5,7,9,11],['Bebop Dominant 5'], [bebopDomChords[4]]]
+const Bebop6 = [['1','b2','2','b3','4','5','b6','b7'],[0,1,2,3,5,7,8,10],['Bebop Dominant 6'], [bebopDomChords[5]]]
+const Bebop7 = [['1','b2','2','3','#4','5','6','7'],[0,1,2,4,6,7,9,11],['Bebop Dominant 7'], [bebopDomChords[6]]]
+const Bebop8 = [['1','b2','b3','4','b5','b6','b7','7'],[0,1,3,5,6,8,10,11],['Bebop Dominant 8'], [bebopDomChords[7]]]
+
+export const BebopDominant = [BebopDom, Bebop2, Bebop3, Bebop4, Bebop5, Bebop6, Bebop7, Bebop8]
 
 
 

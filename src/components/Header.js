@@ -53,6 +53,7 @@ const Header = (props) => {
         <button value='10' onClick={changeScale}>Kumoi</button>
         <button value='11' onClick={changeScale}>Hirojoshi</button>
         <button value='8' onClick={changeScale}>Symmetrical</button>
+        <button value='12' onClick={changeScale}>Bebop Dominant</button>
       </div>
     </div>
   )

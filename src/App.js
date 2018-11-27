@@ -4,7 +4,7 @@ import banner from './header.png'
 import String from './components/String'
 import Info from './components/Info'
 import Header from './components/Header'
-import { Chromatic, Major, MelodicMinor, HarmonicMinor, HarmonicMajor, HungarianMajor, HungarianMinor, NeapolitanMinor, NeapolitanMajor, Symmetrical, Pentatonic, Kumoi, Hirojoshi } from './constants/scales';
+import { Chromatic, Major, MelodicMinor, HarmonicMinor, HarmonicMajor, HungarianMajor, HungarianMinor, NeapolitanMinor, NeapolitanMajor, Symmetrical, Pentatonic, Kumoi, Hirojoshi, BebopDominant } from './constants/scales';
 import {permute} from './constants/helpers'
 
 class App extends Component {
@@ -46,7 +46,7 @@ class App extends Component {
   }
 
   changeScale(event) {
-    let scales = [Major, MelodicMinor, HarmonicMinor, HarmonicMajor, HungarianMajor, HungarianMinor, NeapolitanMinor, NeapolitanMajor, Symmetrical, Pentatonic, Kumoi, Hirojoshi];
+    let scales = [Major, MelodicMinor, HarmonicMinor, HarmonicMajor, HungarianMajor, HungarianMinor, NeapolitanMinor, NeapolitanMajor, Symmetrical, Pentatonic, Kumoi, Hirojoshi, BebopDominant];
     const e = event.target.value
     this.setState({
       scale: scales[e],
@@ -115,7 +115,7 @@ class App extends Component {
     let scale = this.state.scale
     let onOff = this.state.onOff
     let root = this.state.root
- 
+    console.log(Major[3][0][0], BebopDominant[3][0][0])
     return (
       <div className="App">
         <div>

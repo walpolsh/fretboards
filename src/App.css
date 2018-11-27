@@ -1,11 +1,13 @@
 
 .frets {
   border: 1px solid black;
+
   min-width: 10px;
 }
 
 .wrapper {
   display: grid;
+  background: #b1c3cc;
   justify-items: center;
 }
 .frets:nth-child(1) {
@@ -48,12 +50,13 @@
   background: #CFD8DC
 }
 
+
 .first:hover, .second:hover,.third:hover,.fourth:hover,.fifth:hover,.sixth:hover,.seventh:hover,.eighth:hover {
   cursor: pointer;
 }
 
 .first {
-  background: #fb3600;
+  background: #ff9800;
 
 }
 
@@ -73,26 +76,21 @@
 }
 
 .second{
-  background: #8eb7be;
-
+  background: #90a4ae;
+  
 } 
 .fourth{
-  background: #8eb7be;
-
+  
+  background: #78909c;
 } 
 .sixth{
-  background: #8eb7be;
+  background: #b0bec5;
 
 } 
 .eighth{
-  background:#8eb7be;
+  background:#cfd8dc;
 
 } 
-
-.infoHead {
-  /* padding-left: 5vw;
-  padding-right: 5vw; */
-}
 
 .info {
   min-width: 10px;
@@ -127,26 +125,12 @@
 .chordContainer .info:nth-child(1) {
   background: #8eb7be;
 }
-/* .chordContainer .info:nth-child(2) {
-  background: #fb3600;
-}
-.chordContainer .info:nth-child(4) {
-  background: #47a3f8;
-}
-.chordContainer .info:nth-child(6) {
-  background: #ffdf2b;
-}
-.chordContainer .info:nth-child(8) {
-  background: #36d936;
-} */
-
-
 
 .stringContainer {
   text-align: center;
   display: grid;
   /* grid-template-columns: repeat(25, 1fr); */
-  grid-template-columns: 1fr 1.403fr 1.324fr 1.250fr 1.180fr 1.114fr 1.051fr 0.992fr 0.936fr 0.884fr 0.834fr 0.787fr 0.743fr 0.702fr 0.662fr 0.625fr 0.590fr 0.557fr 0.526fr 0.496fr 0.468fr 0.442fr 0.417fr 0.394fr 0.372fr
+  grid-template-columns: 0.5fr 1.403fr 1.324fr 1.250fr 1.180fr 1.114fr 1.051fr 0.992fr 0.936fr 0.884fr 0.834fr 0.787fr 0.743fr 0.702fr 0.662fr 0.625fr 0.590fr 0.557fr 0.526fr 0.496fr 0.468fr 0.442fr 0.417fr 0.394fr 0.372fr
 }
 
 .blankNote .frets{
@@ -159,7 +143,7 @@
   text-align: center;
   display: grid;
   /* grid-template-columns: repeat(25, 1fr); */
-  grid-template-columns: 1fr 1.403fr 1.324fr 1.250fr 1.180fr 1.114fr 1.051fr 0.992fr 0.936fr 0.884fr 0.834fr 0.787fr 0.743fr 0.702fr 0.662fr 0.625fr 0.590fr 0.557fr 0.526fr 0.496fr 0.468fr 0.442fr 0.417fr 0.394fr 0.372fr
+  grid-template-columns: 0.5fr 1.403fr 1.324fr 1.250fr 1.180fr 1.114fr 1.051fr 0.992fr 0.936fr 0.884fr 0.834fr 0.787fr 0.743fr 0.702fr 0.662fr 0.625fr 0.590fr 0.557fr 0.526fr 0.496fr 0.468fr 0.442fr 0.417fr 0.394fr 0.372fr
 
 }
 
@@ -243,19 +227,20 @@ h4 {
 
 .keyBox {
   padding: 0px 10vw 0px 10vw;
-  background-color: #607D8B;
+  background-color: #79909d;
   font-size: 14px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   justify-content: center;
 }
+
 .scaleBox {
-  padding: 0px 5vw 0px 5vw;
-  background-color: #607D8B;
+  /* padding: 0px 5vw 0px 5vw; */
+  background-color: #79909d;
   font-size: 14px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-
+  height: 100px;
+  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
 }
 

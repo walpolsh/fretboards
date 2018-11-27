@@ -115,7 +115,24 @@ class App extends Component {
     let scale = this.state.scale
     let onOff = this.state.onOff
     let root = this.state.root
-    console.log(Major[3][0][0], BebopDominant[3][0][0])
+    const commonProps = {
+      handleHighlight: this.handleHighlight,
+      handleHighlight2: this.handleHighlight2,
+      handleHighlight3: this.handleHighlight3,
+      handleHighlight4: this.handleHighlight4,
+      handleHighlight5: this.handleHighlight5,
+      handleHighlight6: this.handleHighlight6,
+      handleHighlight7: this.handleHighlight7,
+      handleHighlight8: this.handleHighlight8,
+      first: this.state.first ? 'first' : 'hide'  ,
+      second: this.state.second ? 'second' : 'hide'  ,
+      third: this.state.third ? 'third' : 'hide'  ,
+      fourth: this.state.fourth ? 'fourth' : 'hide'  ,
+      fifth: this.state.fifth ? 'fifth' : 'hide'  ,
+      sixth: this.state.sixth ? 'sixth' : 'hide'  ,
+      seventh: this.state.seventh ? 'seventh' : 'hide'  ,
+      eighth: this.state.eighth ? 'eighth' : 'hide'  
+    }
     return (
       <div className="App">
         <div>
@@ -137,29 +154,8 @@ class App extends Component {
                 <Info 
                   mode={mode}
                   root={root}
-                  handleHighlight={this.handleHighlight}
-                  handleHighlight2={this.handleHighlight2}
-                  handleHighlight3={this.handleHighlight3}
-                  handleHighlight4={this.handleHighlight4}
-                  handleHighlight5={this.handleHighlight5}
-                  handleHighlight6={this.handleHighlight6}
-                  handleHighlight7={this.handleHighlight7}
-                  handleHighlight8={this.handleHighlight8}
-                  first={this.state.first ? 'first' : 'hide'}  
-                  second={this.state.second ? 'second' : 'hide'}  
-                  third={this.state.third ? 'third' : 'hide'}  
-                  fourth={this.state.fourth ? 'fourth' : 'hide'}  
-                  fifth={this.state.fifth ? 'fifth' : 'hide'}  
-                  sixth={this.state.sixth ? 'sixth' : 'hide'}  
-                  seventh={this.state.seventh ? 'seventh' : 'hide'}  
-                  eighth={this.state.eighth ? 'eighth' : 'hide'}  
+                  {...commonProps}  
                 />
-                {/* <div>
-                  <h3>{names[i]} {mode[3][0] ? `(${mode[3][0].map(x => x[i])})` : ''}</h3>
-                  <h4>{mode[1].map(x => root[x]).join(' - ')}</h4>
-                  <h4 style={{paddingBottom: '10px'}}>{formulas[i].join(' - ')}</h4>
-                </div> */}
-
                 <div className='fretboardContainer'>
                   <String 
                     stringName='E'
@@ -168,22 +164,7 @@ class App extends Component {
                     root={this.state.root}
                     mode={mode}
                     onOff={onOff}
-                    handleHighlight={this.handleHighlight}
-                    handleHighlight2={this.handleHighlight2}
-                    handleHighlight3={this.handleHighlight3}
-                    handleHighlight4={this.handleHighlight4}
-                    handleHighlight5={this.handleHighlight5}
-                    handleHighlight6={this.handleHighlight6}
-                    handleHighlight7={this.handleHighlight7}
-                    handleHighlight8={this.handleHighlight8}
-                    first={this.state.first ? 'first' : 'hide'}  
-                    second={this.state.second ? 'second' : 'hide'}  
-                    third={this.state.third ? 'third' : 'hide'}  
-                    fourth={this.state.fourth ? 'fourth' : 'hide'}  
-                    fifth={this.state.fifth ? 'fifth' : 'hide'}  
-                    sixth={this.state.sixth ? 'sixth' : 'hide'}  
-                    seventh={this.state.seventh ? 'seventh' : 'hide'}  
-                    eighth={this.state.eighth ? 'eighth' : 'hide'}  
+                    {...commonProps}  
                   />
                   <String
                     stringName='B'
@@ -192,23 +173,7 @@ class App extends Component {
                     root={this.state.root}
                     mode={mode}
                     onOff={onOff}
-                    handleHighlight={this.handleHighlight}
-                    handleHighlight2={this.handleHighlight2}
-                    handleHighlight3={this.handleHighlight3}
-                    handleHighlight4={this.handleHighlight4}
-                    handleHighlight5={this.handleHighlight5}
-                    handleHighlight6={this.handleHighlight6}
-                    handleHighlight7={this.handleHighlight7}
-                    handleHighlight8={this.handleHighlight8}
-                    first={this.state.first ? 'first' : 'hide'}  
-                    second={this.state.second ? 'second' : 'hide'}  
-                    third={this.state.third ? 'third' : 'hide'}  
-                    fourth={this.state.fourth ? 'fourth' : 'hide'}  
-                    fifth={this.state.fifth ? 'fifth' : 'hide'}  
-                    sixth={this.state.sixth ? 'sixth' : 'hide'}  
-                    seventh={this.state.seventh ? 'seventh' : 'hide'}  
-                    eighth={this.state.eighth ? 'eighth' : 'hide'}  
-
+                    {...commonProps}  
                   />
                   <String
                     stringName='G' 
@@ -217,24 +182,7 @@ class App extends Component {
                     root={this.state.root}
                     mode={mode}
                     onOff={onOff}
-                    handleHighlight={this.handleHighlight}
-                    handleHighlight2={this.handleHighlight2}
-                    handleHighlight3={this.handleHighlight3}
-                    handleHighlight4={this.handleHighlight4}
-                    handleHighlight5={this.handleHighlight5}
-                    handleHighlight6={this.handleHighlight6}
-                    handleHighlight7={this.handleHighlight7}
-                    handleHighlight8={this.handleHighlight8}
-                    first={this.state.first ? 'first' : 'hide'}  
-                    second={this.state.second ? 'second' : 'hide'}  
-                    third={this.state.third ? 'third' : 'hide'}  
-                    fourth={this.state.fourth ? 'fourth' : 'hide'}  
-                    fifth={this.state.fifth ? 'fifth' : 'hide'}  
-                    sixth={this.state.sixth ? 'sixth' : 'hide'}  
-                    seventh={this.state.seventh ? 'seventh' : 'hide'}  
-                    eighth={this.state.eighth ? 'eighth' : 'hide'}  
-
-
+                    {...commonProps}  
                   />
                   <String
                     stringName='D' 
@@ -243,24 +191,7 @@ class App extends Component {
                     root={this.state.root}
                     mode={mode}
                     onOff={onOff}
-                    handleHighlight={this.handleHighlight}
-                    handleHighlight2={this.handleHighlight2}
-                    handleHighlight3={this.handleHighlight3}
-                    handleHighlight4={this.handleHighlight4}
-                    handleHighlight5={this.handleHighlight5}
-                    handleHighlight6={this.handleHighlight6}
-                    handleHighlight7={this.handleHighlight7}
-                    handleHighlight8={this.handleHighlight8}
-                    first={this.state.first ? 'first' : 'hide'}  
-                    second={this.state.second ? 'second' : 'hide'}  
-                    third={this.state.third ? 'third' : 'hide'}  
-                    fourth={this.state.fourth ? 'fourth' : 'hide'}  
-                    fifth={this.state.fifth ? 'fifth' : 'hide'}  
-                    sixth={this.state.sixth ? 'sixth' : 'hide'}  
-                    seventh={this.state.seventh ? 'seventh' : 'hide'}  
-                    eighth={this.state.eighth ? 'eighth' : 'hide'}  
-
-
+                    {...commonProps}  
                   />
                   <String
                     stringName='A' 
@@ -269,24 +200,7 @@ class App extends Component {
                     root={this.state.root}
                     mode={mode}
                     onOff={onOff}
-                    handleHighlight={this.handleHighlight}
-                    handleHighlight2={this.handleHighlight2}
-                    handleHighlight3={this.handleHighlight3}
-                    handleHighlight4={this.handleHighlight4}
-                    handleHighlight5={this.handleHighlight5}
-                    handleHighlight6={this.handleHighlight6}
-                    handleHighlight7={this.handleHighlight7}
-                    handleHighlight8={this.handleHighlight8}
-                    first={this.state.first ? 'first' : 'hide'}  
-                    second={this.state.second ? 'second' : 'hide'}  
-                    third={this.state.third ? 'third' : 'hide'}  
-                    fourth={this.state.fourth ? 'fourth' : 'hide'}  
-                    fifth={this.state.fifth ? 'fifth' : 'hide'}  
-                    sixth={this.state.sixth ? 'sixth' : 'hide'}  
-                    seventh={this.state.seventh ? 'seventh' : 'hide'}  
-                    eighth={this.state.eighth ? 'eighth' : 'hide'}  
-
-
+                    {...commonProps}  
                   />
                   <String
                     stringName='E' 
@@ -295,30 +209,9 @@ class App extends Component {
                     root={this.state.root}
                     mode={mode}
                     onOff={onOff}
-                    handleHighlight={this.handleHighlight}
-                    handleHighlight2={this.handleHighlight2}
-                    handleHighlight3={this.handleHighlight3}
-                    handleHighlight4={this.handleHighlight4}
-                    handleHighlight5={this.handleHighlight5}
-                    handleHighlight6={this.handleHighlight6}
-                    handleHighlight7={this.handleHighlight7}
-                    handleHighlight8={this.handleHighlight8}
-                    first={this.state.first ? 'first' : 'hide'}  
-                    second={this.state.second ? 'second' : 'hide'}  
-                    third={this.state.third ? 'third' : 'hide'}  
-                    fourth={this.state.fourth ? 'fourth' : 'hide'}  
-                    fifth={this.state.fifth ? 'fifth' : 'hide'}  
-                    sixth={this.state.sixth ? 'sixth' : 'hide'}  
-                    seventh={this.state.seventh ? 'seventh' : 'hide'}  
-                    eighth={this.state.eighth ? 'eighth' : 'hide'}  
-
-
+                    {...commonProps}  
                   />
                   </div>
-                    {/* <div className='numberContainer'>
-                    {['••','•','','•','','•','','•','','•','','','••','','','•','','•','','•','','•','','','••'].map((x, i) => 
-                      <div key={i++}>{x}</div>)}
-                  </div> */}
                   <div className='numberContainer'>
                     {
                       ['','1','','3','','5','','7','','9','','','12','','','15','','17','','19','','21','','','24']

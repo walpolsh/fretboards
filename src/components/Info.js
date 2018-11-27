@@ -13,13 +13,13 @@ const Info = (props) => {
     i === 5 ? sixth :
     i === 6 ? seventh : eighth
   let handler = (i) =>    
-  i === 0 ? handleHighlight :
-  i === 1 ? handleHighlight2 :
-  i === 2 ? handleHighlight3 :
-  i === 3 ? handleHighlight4 :
-  i === 4 ? handleHighlight5 :
-  i === 5 ? handleHighlight6 :
-  i === 6 ? handleHighlight7 : handleHighlight8
+    i === 0 ? handleHighlight :
+    i === 1 ? handleHighlight2 :
+    i === 2 ? handleHighlight3 :
+    i === 3 ? handleHighlight4 :
+    i === 4 ? handleHighlight5 :
+    i === 5 ? handleHighlight6 :
+    i === 6 ? handleHighlight7 : handleHighlight8
 
   let notes = mode[3][0][0] ? 
     mode[1].map((x, i) => <div onClick={handler(i)} className={`info ${color(i)}`} key={i}>{root[x]} {mode[3][0][0][i]}</div>) : 

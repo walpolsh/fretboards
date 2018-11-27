@@ -6,9 +6,12 @@ const String = (props) => {
     handleHighlight, handleHighlight2, handleHighlight3, handleHighlight4, 
     handleHighlight5, handleHighlight6, handleHighlight7, handleHighlight8,
     first, second, third, fourth, fifth, sixth, seventh, eighth} = props
+
   let notes = mode[1].map(x => root[x])
   let string = permute(Chromatic, startNote)
   string = string.concat(string).concat(string[0])  
+
+
   return (
     <div className="stringContainer">
       { 

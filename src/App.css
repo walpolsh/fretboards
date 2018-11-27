@@ -5,6 +5,8 @@
   min-width: 10px;
 }
 
+
+
 .wrapper {
   display: grid;
   background: #b1c3cc;
@@ -28,7 +30,8 @@
   background:black;
 }
 .fretboardContainer {
-  background:white;
+  background:#c8edff;
+  font-size: 12px;
   /* background-image: url(./maple.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,8 +41,8 @@
 }
 
 .hide {
-  background: white;
-  color: grey;
+  background: #eefdff;
+  color: #607D8B
 }
 
 .hide:hover {
@@ -55,49 +58,51 @@
   cursor: pointer;
 }
 
-.first {
-  background: #ff9800;
+ 
 
+ 
+
+ 
+
+.first {
+  background:#F44336;
 }
 
 .third {
-  background: #47a3f8;
-
+  background: #4caf50;
 } 
 
 .fifth {
-  background: #ffdf2b;
-
+  background:#FF9800;
 } 
 
 .seventh {
-  background: #36d936;
-
+  background: #ffeb3b;
 }
 
-.second{
-  background: #90a4ae;
+.second {
+  background: #873395;
   
 } 
 .fourth{
+  background: #612cbe;
   
-  background: #78909c;
-} 
+}
 .sixth{
-  background: #b0bec5;
-
-} 
+  background: #334ee9;
+  
+}
 .eighth{
-  background:#cfd8dc;
-
-} 
-
+  background: #1369ae;
+  
+}
 .info {
   min-width: 10px;
 }
 
 .formulaContainer {
   display: grid;
+  font-size:12px
 }
 
 .formulaContainer > .info:nth-child(odd) {
@@ -114,11 +119,15 @@
 }
 
 .chordContainer {
+  font-size: 11px;
   background: #CFD8DC;
   display: grid;
+  font-weight: bold;
+  max-height: 30px;
 }
 
 .chordContainer > .info {
+  text-emphasis: bold;
   border: 1px solid black;
 }
 
@@ -147,19 +156,16 @@
 
 }
 
-
-
 .App {
   background: #CFD8DC;
   align-items: center;
-  font-size: 12px;
+  font-size: 10px;
   color: black;
 
 }
 
 button {
     border: 1px solid blue;
-    font-size: 14px;
     border-radius: 4px;
     background-color: #FF9800;
     outline: 0;
@@ -167,7 +173,6 @@ button {
 
 select {
   border: 1px solid blue;
-  font-size: 14px;
   border-radius: 4px;
   background-color: #FF9800;
 }
@@ -178,7 +183,6 @@ button:hover {
   border-radius: 4px;
   background-color:#ffb74d;
 }
-
 
 #innerDiv {
   width: 99%;
@@ -228,26 +232,25 @@ h4 {
 .keyBox {
   padding: 0px 10vw 0px 10vw;
   background-color: #79909d;
-  font-size: 14px;
+  /* font-size: 14px; */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   justify-content: center;
 }
 
 .scaleBox {
-  /* padding: 0px 5vw 0px 5vw; */
+  padding: 0px 5vw 0px 5vw;
   background-color: #79909d;
-  font-size: 14px;
+  /* font-size: 14px; */
   display: grid;
-  height: 100px;
-  grid-template-columns: repeat(5, 1fr);
+  /* height: 100px; */
+  grid-template-columns: repeat(7, 1fr);
   justify-content: center;
 }
 
 .menuBox {
   padding: 0px 20px 0px 20px;
   background-color: #607D8B;
-  font-size: 14px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -271,7 +274,7 @@ h4 {
   width: 80%;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   select {
     font-size: 10px;
   }
@@ -289,4 +292,4 @@ h4 {
   h1 {
     font-size: 20px;
   }
-}
+} */

@@ -40,7 +40,6 @@ const Header = (props) => {
         <button value='11' onClick={changeKey}>B</button>
       </div>
 
-      <div >
         <div className='scaleBox'>
           <button value='0' onClick={changeScale}>Major</button>
           <button value='1' onClick={changeScale}>Melodic Min.</button>
@@ -56,7 +55,6 @@ const Header = (props) => {
           <button value='8' onClick={changeScale}>Symmetrical</button>
           <button value='12' onClick={changeScale}>Bebop Dominant</button>
         </div>
-      </div>
     </div>
   )
 }

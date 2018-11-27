@@ -126,10 +126,8 @@ class App extends Component {
             onOff={this.state.onOff}
           />
         </div>          
-        <div style={{paddingTop: '120px'}} className='wrapper'>
-        {/* <div className='headerBox'>
-          <img alt='banner' src={banner} style={{width: '300px', height: '50px'}}></img>
-        </div> */}
+        <div style={{paddingTop: '150px'}} className='wrapper'>
+
         {
           scale.map((mode, i) => 
             {
@@ -322,8 +320,11 @@ class App extends Component {
                       <div key={i++}>{x}</div>)}
                   </div> */}
                   <div className='numberContainer'>
-                    {['','1','','3','','5','','7','','9','','','12','','','15','','17','','19','','21','','','24'].map((x, i) => 
-                      <div key={i++}>{x}</div>)}
+                    {
+                      ['','1','','3','','5','','7','','9','','','12','','','15','','17','','19','','21','','','24']
+                      .map((x, i) => <div key={i++}>{x}</div>
+                      )
+                    }
                   </div>
                 </div>
               )

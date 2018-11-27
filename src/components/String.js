@@ -11,7 +11,6 @@ const String = (props) => {
   let string = permute(Chromatic, startNote)
   string = string.concat(string).concat(string[0])  
 
-
   return (
     <div className="stringContainer">
       { 

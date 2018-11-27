@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import banner from './header.png'
 import String from './components/String'
 import Info from './components/Info'
 import Header from './components/Header'
@@ -13,7 +12,6 @@ class App extends Component {
     this.state = {
       root: permute(Chromatic, 4),
       scale: Major,
-      onOff: '0',
       first: true,
       second: true,
       third: true,
@@ -26,7 +24,6 @@ class App extends Component {
 
     this.changeScale = this.changeScale.bind(this)
     this.changeKey = this.changeKey.bind(this)
-    this.handleSwitch = this.handleSwitch.bind(this)
     this.handleHighlight = this.handleHighlight.bind(this)
     this.handleHighlight2 = this.handleHighlight2.bind(this)
     this.handleHighlight3 = this.handleHighlight3.bind(this)
@@ -53,12 +50,6 @@ class App extends Component {
     })
   }
 
-  handleSwitch(event) {
-    const e = event.target.value;
-    this.setState({
-      onOff: e,
-    })
-  }
 
   handleHighlight() {
     this.setState({
@@ -113,7 +104,6 @@ class App extends Component {
   
   render() {
     let scale = this.state.scale
-    let onOff = this.state.onOff
     let root = this.state.root
     const commonProps = {
       handleHighlight: this.handleHighlight,
@@ -133,6 +123,7 @@ class App extends Component {
       seventh: this.state.seventh ? 'seventh' : 'hide'  ,
       eighth: this.state.eighth ? 'eighth' : 'hide'  
     }
+
     return (
       <div className="App">
         <div>
@@ -163,7 +154,6 @@ class App extends Component {
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}
-                    onOff={onOff}
                     {...commonProps}  
                   />
                   <String
@@ -172,7 +162,6 @@ class App extends Component {
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}
-                    onOff={onOff}
                     {...commonProps}  
                   />
                   <String
@@ -181,7 +170,6 @@ class App extends Component {
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}
-                    onOff={onOff}
                     {...commonProps}  
                   />
                   <String
@@ -190,7 +178,6 @@ class App extends Component {
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}
-                    onOff={onOff}
                     {...commonProps}  
                   />
                   <String
@@ -199,7 +186,6 @@ class App extends Component {
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}
-                    onOff={onOff}
                     {...commonProps}  
                   />
                   <String
@@ -208,7 +194,6 @@ class App extends Component {
                     Chromatic={Chromatic}
                     root={this.state.root}
                     mode={mode}
-                    onOff={onOff}
                     {...commonProps}  
                   />
                   </div>
@@ -223,10 +208,7 @@ class App extends Component {
               )
             }
             )
-
           }
-          
-          
         </div>
         <footer>
             <div>
@@ -234,7 +216,6 @@ class App extends Component {
               <a href="https://github.com/walpolsh">© Paul J. Walsh</a>
             </div>
           </footer>
-
       </div>
     );
   }

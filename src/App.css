@@ -9,7 +9,7 @@
 
 .wrapper {
   display: grid;
-  background: #b1c3cc;
+  background: #9fc0d1;
   justify-items: center;
 }
 .frets:nth-child(1) {
@@ -134,7 +134,7 @@
   text-align: center;
   display: grid;
   /* grid-template-columns: repeat(25, 1fr); */
-  grid-template-columns: 0.5fr 1.403fr 1.324fr 1.250fr 1.180fr 1.114fr 1.051fr 0.992fr 0.936fr 0.884fr 0.834fr 0.787fr 0.743fr 0.702fr 0.662fr 0.625fr 0.590fr 0.557fr 0.526fr 0.496fr 0.468fr 0.442fr 0.417fr 0.394fr 0.372fr
+  grid-template-columns:  0.5fr 1.403fr 1.324fr 1.250fr 1.180fr 1.114fr 1.051fr 0.992fr 0.936fr 0.884fr 0.834fr 0.787fr 0.743fr 0.702fr 0.662fr 0.625fr 0.590fr 0.557fr 0.526fr 0.496fr 0.468fr 0.442fr 0.417fr 0.394fr 0.372fr
 }
 
 .blankNote .frets{
@@ -147,7 +147,7 @@
   text-align: center;
   display: grid;
   /* grid-template-columns: repeat(25, 1fr); */
-  grid-template-columns: 0.5fr 1.403fr 1.324fr 1.250fr 1.180fr 1.114fr 1.051fr 0.992fr 0.936fr 0.884fr 0.834fr 0.787fr 0.743fr 0.702fr 0.662fr 0.625fr 0.590fr 0.557fr 0.526fr 0.496fr 0.468fr 0.442fr 0.417fr 0.394fr 0.372fr;
+  grid-template-columns:  0.5fr 1.403fr 1.324fr 1.250fr 1.180fr 1.114fr 1.051fr 0.992fr 0.936fr 0.884fr 0.834fr 0.787fr 0.743fr 0.702fr 0.662fr 0.625fr 0.590fr 0.557fr 0.526fr 0.496fr 0.468fr 0.442fr 0.417fr 0.394fr 0.372fr;
   font-weight: bold;
 }
 
@@ -162,7 +162,7 @@
 button {
     border: 1px solid blue;
     border-radius: 4px;
-    background-color: #FF9800;
+    background-color: #fca421;
     outline: 0;
 }
 
@@ -269,7 +269,7 @@ h4 {
   width: 80%;
 }
 
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   select {
     font-size: 10px;
   }
@@ -287,4 +287,8 @@ h4 {
   h1 {
     font-size: 20px;
   }
-} */
+
+  .fretboardContainer {
+    font-size: 10px;
+  }
+}

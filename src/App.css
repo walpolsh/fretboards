@@ -60,15 +60,15 @@
 
 
 .first {
-  background:#F44336;
+  background:#ff5722;
 }
 
 .third {
-  background: #4caf50;
+  background: #ff9800;
 } 
 
 .fifth {
-  background:#FF9800;
+  background:#FFC107;
 } 
 
 .seventh {
@@ -76,7 +76,7 @@
 }
 
 .second {
-  background: #334ee9ba;
+  background: #1369aecf;
   
 } 
 .fourth{
@@ -84,7 +84,7 @@
   
 }
 .sixth{
-  background: #1369aecf;
+  background: #334ee9ba;
   
 }
 .eighth{
@@ -190,6 +190,14 @@ footer {
   height: 10%;
   width: 100%;
   text-align: center;
+  background-color: #78909C;
+}
+
+hr {
+  margin: 0;
+  border: 0;
+  padding: 5px;
+  background-color: #78909C;
 }
 
 
@@ -218,10 +226,18 @@ h4 {
 }
 
 .headerBox {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width:100%;
   background-color: #78909C;
   justify-content: center;
+}
+
+.banner {
+  grid-column: 2;
+  justify-self: center;
+  width: 300px; 
+  height: 50px;
 }
 
 .keyBox {

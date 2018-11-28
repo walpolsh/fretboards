@@ -5,7 +5,7 @@ const Header = (props) => {
   return (
     <div className='topnav'>
       <div className='headerBox'>
-        <img alt='banner' src={banner} style={{width: '300px', height: '50px'}}></img>
+        <img className='banner' alt='banner' src={banner} style={{}}></img>
       </div>
       <div className='keyBox'>
         <button id='keySig' value='0' onClick={changeKey}>C</button>
